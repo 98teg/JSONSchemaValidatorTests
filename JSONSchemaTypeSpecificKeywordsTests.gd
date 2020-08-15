@@ -52,3 +52,6 @@ func _init():
 	test.expected_error = "Type mismatch: expected [number, string] for 'schema root'"
 
 	tests.append(test)
+
+func check(results_tree : Tree) -> void:
+	check_tests(results_tree, "Type-specific keywords")

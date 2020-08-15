@@ -1,10 +1,15 @@
 extends Node
 
 func _ready():
-	var tests_modules = []
+	var tests_results = get_node("ResultsScroller/TestsResults")
+	tests_results.create_item()
+	tests_results.set_column_min_width(0, 57)
+	tests_results.set_column_expand(0, false)
+	
+	var test_module
 
-	tests_modules.append(JSONSchemaTheBasicsTests.new())
-	tests_modules.append(JSONSchemaTypeSpecificsKeywordsTests.new())
+	test_module = JSONSchemaTheBasicsTests.new()
+	test_module.check(tests_results)
 
-	for tests_module in tests_modules:
-		tests_module.check()
+	test_module = JSONSchemaTypeSpecificsKeywordsTests.new()
+	test_module.check(tests_results)
