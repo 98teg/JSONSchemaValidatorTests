@@ -9,7 +9,7 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Reference",
+"base": "File",
 "class": "JSONFile",
 "language": "GDScript",
 "path": "res://JSON-Schema-validator/scripts/json_file.gd"
@@ -33,13 +33,19 @@ _global_script_classes=[ {
 "class": "JSONSchemaTheBasicsTests",
 "language": "GDScript",
 "path": "res://JSONSchemaTheBasicsTests.gd"
+}, {
+"base": "JSONSchemaTests",
+"class": "JSONSchemaTypeSpecificsKeywordsTests",
+"language": "GDScript",
+"path": "res://JSONSchemaTypeSpecificKeywordsTests.gd"
 } ]
 _global_script_class_icons={
 "JSONFile": "",
 "JSONSchema": "",
 "JSONSchemaTest": "",
 "JSONSchemaTests": "",
-"JSONSchemaTheBasicsTests": ""
+"JSONSchemaTheBasicsTests": "",
+"JSONSchemaTypeSpecificsKeywordsTests": ""
 }
 
 [application]
