@@ -9,15 +9,15 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "File",
+"base": "Reference",
 "class": "JSONFile",
 "language": "GDScript",
-"path": "res://JSON-Shema-validator/scripts/json_file.gd"
+"path": "res://JSON-Schema-validator/scripts/json_file.gd"
 }, {
 "base": "Reference",
 "class": "JSONSchema",
 "language": "GDScript",
-"path": "res://JSON-Shema-validator/scripts/json_schema_validator.gd"
+"path": "res://JSON-Schema-validator/scripts/json_schema_validator.gd"
 }, {
 "base": "Reference",
 "class": "JSONSchemaTest",

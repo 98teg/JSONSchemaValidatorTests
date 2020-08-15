@@ -59,8 +59,26 @@ func _init():
 
 	test = JSONSchemaTest.new()
 
-	test.name = "Anythin with false as the schema"
+	test.name = "Anything with false as the schema"
 	test.json_data = JSON.print("Resistance is futile...  This will always fail!!!")
 	test.schema = JSON.print(false)
+	test.expected_error = "Validation fails with message: Schema declared as deny all"
+
+	tests.append(test)
+
+	test = JSONSchemaTest.new()
+
+	test.name = "The type keyword, correct test"
+	test.json_data = JSON.print("I'm a string")
+	test.schema = JSON.print({ "type": "string" })
+
+	tests.append(test)
+
+	test = JSONSchemaTest.new()
+
+	test.name = "The type keyword, incorrect test"
+	test.json_data = JSON.print(42)
+	test.schema = JSON.print({ "type": "string" })
+	test.expected_error = "Type mismatch: expected [string] for 'schema root'"
 
 	tests.append(test)
