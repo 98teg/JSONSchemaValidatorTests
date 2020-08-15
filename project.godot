@@ -12,21 +12,40 @@ _global_script_classes=[ {
 "base": "File",
 "class": "JSONFile",
 "language": "GDScript",
-"path": "res://scripts/json_file.gd"
+"path": "res://JSON-Shema-validator/scripts/json_file.gd"
 }, {
 "base": "Reference",
 "class": "JSONSchema",
 "language": "GDScript",
-"path": "res://scripts/json_schema_validator.gd"
+"path": "res://JSON-Shema-validator/scripts/json_schema_validator.gd"
+}, {
+"base": "Reference",
+"class": "JSONSchemaTest",
+"language": "GDScript",
+"path": "res://JSONSchemaTest.gd"
+}, {
+"base": "Reference",
+"class": "JSONSchemaTests",
+"language": "GDScript",
+"path": "res://JSONSchemaTests.gd"
+}, {
+"base": "JSONSchemaTests",
+"class": "JSONSchemaTheBasicsTests",
+"language": "GDScript",
+"path": "res://JSONSchemaTheBasicsTests.gd"
 } ]
 _global_script_class_icons={
 "JSONFile": "",
-"JSONSchema": ""
+"JSONSchema": "",
+"JSONSchemaTest": "",
+"JSONSchemaTests": "",
+"JSONSchemaTheBasicsTests": ""
 }
 
 [application]
 
 config/name="JSONSchemaValidatorTests"
+run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 
 [rendering]
