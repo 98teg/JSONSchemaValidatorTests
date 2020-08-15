@@ -1,0 +1,34 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "File",
+"class": "JSONFile",
+"language": "GDScript",
+"path": "res://scripts/json_file.gd"
+}, {
+"base": "Reference",
+"class": "JSONSchema",
+"language": "GDScript",
+"path": "res://scripts/json_schema_validator.gd"
+} ]
+_global_script_class_icons={
+"JSONFile": "",
+"JSONSchema": ""
+}
+
+[application]
+
+config/name="JSONSchemaValidatorTests"
+config/icon="res://icon.png"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
