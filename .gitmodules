@@ -1,0 +1,3 @@
+[submodule "JSON-Shema-validator"]
+	path = JSON-Shema-validator
+	url = https://github.com/Sahedo/JSON-Shema-validator
