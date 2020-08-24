@@ -13,3 +13,6 @@ func _ready():
 
 	test_module = JSONSchemaTypeSpecificsKeywordsTests.new()
 	test_module.check(tests_results)
+
+	test_module = JSONSchemaStringTests.new()
+	test_module.check(tests_results)
