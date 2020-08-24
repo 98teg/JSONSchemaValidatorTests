@@ -20,6 +20,11 @@ _global_script_classes=[ {
 "path": "res://JSON-Schema-validator/scripts/json_schema_validator.gd"
 }, {
 "base": "JSONSchemaTests",
+"class": "JSONSchemaNumericTypesTests",
+"language": "GDScript",
+"path": "res://tests/JSONSchemaNumericTypesTests.gd"
+}, {
+"base": "JSONSchemaTests",
 "class": "JSONSchemaStringTests",
 "language": "GDScript",
 "path": "res://tests/JSONSchemaStringTests.gd"
@@ -47,6 +52,7 @@ _global_script_classes=[ {
 _global_script_class_icons={
 "JSONFile": "",
 "JSONSchema": "",
+"JSONSchemaNumericTypesTests": "",
 "JSONSchemaStringTests": "",
 "JSONSchemaTest": "",
 "JSONSchemaTests": "",
