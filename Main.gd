@@ -19,3 +19,6 @@ func _ready():
 	
 	test_module = JSONSchemaNumericTypesTests.new()
 	test_module.check(tests_results)
+	
+	test_module = JSONSchemaObjectTests.new()
+	test_module.check(tests_results)

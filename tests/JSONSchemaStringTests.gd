@@ -124,7 +124,7 @@ func _init():
 		"type": "string",
 		"pattern": "^(\\([0-9]{3}\\))?[0-9]{3}-[0-9]{4}$"
 	})
-	test.expected_error = "Validation fails with message: Content of 'schema root' does not match its corresponding pattern"
+	test.expected_error = "Validation fails with message: String 'schema root' does not match its corresponding pattern"
 
 	tests.append(test)
 
@@ -136,7 +136,7 @@ func _init():
 		"type": "string",
 		"pattern": "^(\\([0-9]{3}\\))?[0-9]{3}-[0-9]{4}$"
 	})
-	test.expected_error = "Validation fails with message: Content of 'schema root' does not match its corresponding pattern"
+	test.expected_error = "Validation fails with message: String 'schema root' does not match its corresponding pattern"
 
 	tests.append(test)
 
